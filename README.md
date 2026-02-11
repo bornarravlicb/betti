@@ -16,7 +16,7 @@ It computes persistence diagrams and Betti numbers from point clouds or high-dim
 
 ## Installation
 
-pip install .
+(unavailable yet) through pip install
 
 > Make sure Julia is installed and `pyjulia` is available in Python.
 
