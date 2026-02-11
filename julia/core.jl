@@ -1,14 +1,16 @@
-using Eirene
+module Core
+
+export compute_persistence
+
+using Complexes
+using Homology
 
 function compute_persistence(points::AbstractMatrix)
     pts = convert(Matrix{Float64}, points)
-    ph = eirene(pts, model="vr", maxdim=2)
-    diagram = ph["dgms"]
-    result = []
-    for dgm in diagram
-        for pair in dgm
-            push!(result, (pair[1], pair[2]))
-        end
-    end
-    return result
+    complex = build_vr_complex(pts, maxdim=2)
+    diagram = compute_homology(complex)
+    return diagram
 end
+
+end
+
