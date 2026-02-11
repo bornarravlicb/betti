@@ -1,0 +1,7 @@
+name = "BettiBackend"
+uuid = "b1d0c2f4-1234-4abc-9876-abcdef123456"
+authors = ["Borna R. Ravlić"]
+version = "0.1.0"
+
+[deps]
+Eirene = "7d9dc10a-9c83-5ae0-98f0-8f70f8ef2b5c"
